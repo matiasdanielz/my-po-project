@@ -6,6 +6,7 @@ import { PortalComponent } from './portal/portal.component';
 import { PoMenuModule } from '@po-ui/ng-components';
 import { TelaProdutosComponent } from './tela-produtos/tela-produtos.component';
 import { PoPageModule } from '@po-ui/ng-components';
+import { PoTableModule } from '@po-ui/ng-components';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { PoPageModule } from '@po-ui/ng-components';
     CommonModule,
     PortalRoutingModule,
     PoMenuModule,
-    PoPageModule
+    PoPageModule,
+    PoTableModule
   ]
 })
 export class PortalModule { }

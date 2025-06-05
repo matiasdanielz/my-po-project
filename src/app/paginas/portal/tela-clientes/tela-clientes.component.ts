@@ -8,5 +8,5 @@ import { PoMenuItem } from '@po-ui/ng-components';
   styleUrl: './tela-clientes.component.css'
 })
 export class TelaClientesComponent {
-
+  protected items: any[] = [{ table: 'PO Table', angular: 'PO-UI' }];
 }
