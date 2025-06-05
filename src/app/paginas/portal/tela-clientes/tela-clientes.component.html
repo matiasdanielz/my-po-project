@@ -1,8 +1,14 @@
 <po-page-default 
     p-title="Clientes"
-    p-subtitle="teste">
+    p-subtitle="teste"
+    [p-actions]="pageActions">
     <po-table 
         [p-items]="items"
-        [p-columns]="columns">
+        [p-columns]="columns"
+        p-container="true"
+        [p-height]="tableHeight"
+        [p-selectable]="true"
+        [p-single-select]="true"
+        [p-actions]="tableActions">
     </po-table>
 </po-page-default>
