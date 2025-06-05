@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 
+import { PoMenuItem } from '@po-ui/ng-components';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  standalone: false,
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css'],
+  standalone: false
 })
 export class AppComponent {
-  title = 'my-po-project';
 }
