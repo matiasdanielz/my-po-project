@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PoMenuItem } from '@po-ui/ng-components';
+import { PoMenuItem, PoTableColumn } from '@po-ui/ng-components';
 
 @Component({
   selector: 'app-tela-clientes',
@@ -8,5 +8,21 @@ import { PoMenuItem } from '@po-ui/ng-components';
   styleUrl: './tela-clientes.component.css'
 })
 export class TelaClientesComponent {
-  protected items: any[] = [{ table: 'PO Table', angular: 'PO-UI' }];
+  protected columns: PoTableColumn[] = [
+    {
+      property: 'id',
+      label: 'Codigo'
+    },
+    {
+      property: 'name',
+      label: 'Nome'
+    }
+  ];
+
+  protected items: any[] = [
+    { 
+      id: "001", 
+      name: 'Fulano' 
+    }
+  ];
 }
